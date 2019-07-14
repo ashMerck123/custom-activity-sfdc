@@ -1,5 +1,5 @@
 ﻿{
-  "key": "288b5888-5e74-42c5-8c12-1e7d3a4459bd",
+  "key": "e9d1cc98-3b21-43ad-9f76-18109e2fd5ae",
   "metaData": {
     "icon": "images/unlock.jpg",
     "iconSmall": "images/unlock_small.jpg"
@@ -13,7 +13,7 @@
   },
   "workflowApiVersion": "1.1",
   "configurationArguments": {
-    "applicationExtensionKey": "288b5888-5e74-42c5-8c12-1e7d3a4459bd",
+    "applicationExtensionKey": "e9d1cc98-3b21-43ad-9f76-18109e2fd5ae",
     "save": {
       "url": "https://sfdc-custom-act.herokuapp.com/activity/save",
       "verb": "POST",
