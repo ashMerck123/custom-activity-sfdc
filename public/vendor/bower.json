@@ -1,0 +1,19 @@
+﻿{
+    "name": "sfdc-custom-activity",
+    "homepage": "https://github.com/jabreuar/custom-activity-sfdc",
+    "description": "",
+    "main": "",
+    "license": "MIT",
+    "private": true,
+    "ignore": [
+      "**/.*",
+      "node_modules",
+      "bower_components",
+      "test",
+      "tests"
+    ],
+    "dependencies": {
+      "salesforce-lightning-design-system": "^2.3.1",
+      "jquery": "^3.2.1"
+    }
+  }
