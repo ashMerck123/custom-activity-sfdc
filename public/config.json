@@ -1,75 +1,90 @@
 ﻿{
-    "key": "95d54fbd-10bf-4182-bfa4-672e20c8c413",
-    "workflowApiVersion": "1.1",
-    "metaData": {
-        "icon": "images/unlock.png",
-        "iconSmall": "images/unlock_small.png",
-        "category": "message"
+  "key": "288b5888-5e74-42c5-8c12-1e7d3a4459bd",
+  "metaData": {
+    "icon": "images/unlock.jpg",
+    "iconSmall": "images/unlock_small.jpg"
+  },
+  "type": "RESTDECISION",
+  "lang": {
+    "en-US": {
+      "name": "Custom Split",
+      "description": "Custom Split activity that makes a decision based on data from a custom application"
+    }
+  },
+  "workflowApiVersion": "1.1",
+  "configurationArguments": {
+    "applicationExtensionKey": "288b5888-5e74-42c5-8c12-1e7d3a4459bd",
+    "save": {
+      "url": "https://sfdc-custom-act.herokuapp.com/activity/save",
+      "verb": "POST",
+      "body": "",
+      "useJwt": false
     },
-    "type": "RESTDECISION",
-    "lang": {
-        "en-US": {
-            "name": "Template",
-          "description": "A Template for a custom Journey Builder activity",
-          "step1Label": "Configure Activity"
-        }
+    "publish": {
+      "url": "https://sfdc-custom-act.herokuapp.com/activity/publish",
+      "verb": "POST",
+      "body": "",
+      "useJwt": false
     },
-    "arguments": {
-        "execute": {
-           "inArguments":[
-				{
-                    "emailAddress": "{{Contact.Attribute.CustomActivity.EmailAddress}}"
-                }									
-			],
-          "outArguments": [],
-          "url": "https://sfdc-custom-act.herokuapp.com/journeybuilder/execute",
-           "verb": "POST",
-            "body": "",
-            "header": "",
-            "format": "json",
-            "useJwt": true,
-            "timeout": 10000
-        }
+    "validate": {
+      "url": "https://sfdc-custom-act.herokuapp.com/activity/validate",
+      "verb": "POST",
+      "body": "",
+      "useJwt": false
+    }
+  },
+  "wizardSteps": [
+    {
+      "key": "eventdefinitionkey",
+      "label": "Event Definition Key"
     },
-    "configurationArguments": {
-      "applicationExtensionKey": "95d54fbd-10bf-4182-bfa4-672e20c8c413",
-      "save": {
-        "url": "https://sfdc-custom-act.herokuapp.com/journeybuilder/save",
-          "verb": "POST",
-        "useJwt": true
-       },
-       "publish": {
-        "url": "https://sfdc-custom-act.herokuapp.com/journeybuilder/publish",
-           "verb": "POST",
-        "useJwt": true
-       },
-      "stop": {
-        "url": "https://sfdc-custom-act.herokuapp.com/journeybuilder/stop",
-           "verb": "POST",
-        "useJwt": true
+    {
+      "key": "idselection",
+      "label": "ID Selection"
+    }
+  ],
+  "outcomes": [
+    {
+      "arguments": {
+        "branchResult": "true"
       },
-      "validate": {
-        "url": "https://sfdc-custom-act.herokuapp.com/journeybuilder/validate",
-        "verb": "POST",
-        "useJwt": true
+      "metaData": {
+        "label": "If true"
       }
     },
-    "wizardSteps": [
-        { "label": "Configure Activity", "key": "step1" }
-    ],
-    "userInterfaces": {
-        "configModal": {
-            "height": 400,
-            "width": 1000,
-          "fullscreen": false
-        }
-    },
-    "schema": {
-        "arguments": {
-            "execute": {
-                "inArguments": [],
-                "outArguments": []
-            }
-        }
+    {
+      "arguments": {
+        "branchResult": "false"
+      },
+      "metaData": {
+        "label": "If false"
+      }
     }
+  ],
+  "userInterfaces": {
+    "runningModal": {
+      "url": "runningModal.html"
+    },
+    "runningHover": {
+      "url": "runningHover.html"
+    }
+  },
+  "arguments": {
+    "execute": {
+      "inArguments": [],
+      "outArguments": [],
+      "url": "https://sfdc-custom-act.herokuapp.com/activity/execute",
+      "verb": "POST",
+      "body": "",
+      "header": "",
+      "format": "json",
+      "useJwt": false,
+      "timeout": 90000
+    }
+  },
+  "edit": {
+    "url": "https://sfdc-custom-act.herokuapp.com",
+    "height": 200,
+    "width": 500
+  }
 }
