@@ -31,7 +31,7 @@
         }
     },
     "configurationArguments": {
-      "applicationExtensionKey": "a7c425d0-b5ac-4f93-a65b-0c9b2aac2365",
+      "applicationExtensionKey": "95d54fbd-10bf-4182-bfa4-672e20c8c413",
       "save": {
         "url": "https://sfdc-custom-act.herokuapp.com/journeybuilder/save",
           "verb": "POST",
