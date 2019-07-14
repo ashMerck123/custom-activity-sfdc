@@ -1,11 +1,12 @@
 ﻿{
+    "key": "95d54fbd-10bf-4182-bfa4-672e20c8c413",
     "workflowApiVersion": "1.1",
     "metaData": {
         "icon": "images/unlock.png",
         "iconSmall": "images/unlock_small.png",
         "category": "message"
     },
-    "type": "REST",
+    "type": "RESTDECISION",
     "lang": {
         "en-US": {
             "name": "Template",
