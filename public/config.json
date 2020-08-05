@@ -73,7 +73,7 @@
     "execute": {
       "inArguments": [],
       "outArguments": [],
-      "url": "https://sfdc-custom-act.herokuapp.com/activity/execute",
+      "url": "https://mc-custom-activity-poc.herokuapp.com/activity/execute",
       "verb": "POST",
       "body": "",
       "header": "",
@@ -83,7 +83,7 @@
     }
   },
   "edit": {
-    "url": "https://sfdc-custom-act.herokuapp.com",
+    "url": "https://mc-custom-activity-poc.herokuapp.com",
     "height": 200,
     "width": 500
   }
