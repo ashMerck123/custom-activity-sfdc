@@ -1,0 +1,90 @@
+﻿{
+  "key": "e9d1cc98-3b21-43ad-9f76-18109e2fd5ae",
+  "metaData": {
+    "icon": "images/unlock.jpg",
+    "iconSmall": "images/unlock_small.jpg"
+  },
+  "type": "RESTDECISION",
+  "lang": {
+    "en-US": {
+      "name": "Custom Split",
+      "description": "Custom Split activity that makes a decision based on data from a custom application"
+    }
+  },
+  "workflowApiVersion": "1.1",
+  "configurationArguments": {
+    "applicationExtensionKey": "e9d1cc98-3b21-43ad-9f76-18109e2fd5ae",
+    "save": {
+      "url": "https://sfdc-custom-act.herokuapp.com/activity/save",
+      "verb": "POST",
+      "body": "",
+      "useJwt": false
+    },
+    "publish": {
+      "url": "https://sfdc-custom-act.herokuapp.com/activity/publish",
+      "verb": "POST",
+      "body": "",
+      "useJwt": false
+    },
+    "validate": {
+      "url": "https://sfdc-custom-act.herokuapp.com/activity/validate",
+      "verb": "POST",
+      "body": "",
+      "useJwt": false
+    }
+  },
+  "wizardSteps": [
+    {
+      "key": "eventdefinitionkey",
+      "label": "Event Definition Key"
+    },
+    {
+      "key": "idselection",
+      "label": "ID Selection"
+    }
+  ],
+  "outcomes": [
+    {
+      "arguments": {
+        "branchResult": "true"
+      },
+      "metaData": {
+        "label": "If true"
+      }
+    },
+    {
+      "arguments": {
+        "branchResult": "false"
+      },
+      "metaData": {
+        "label": "If false"
+      }
+    }
+  ],
+  "userInterfaces": {
+    "runningModal": {
+      "url": "runningModal.html"
+    },
+    "runningHover": {
+      "url": "runningHover.html"
+    }
+  },
+  "arguments": {
+    "execute": {
+      "inArguments": [],
+      "outArguments": [],
+      "url": "https://sfdc-custom-act.herokuapp.com/activity/execute",
+      "verb": "POST",
+      "body": "",
+      "header": "",
+      "format": "json",
+      "useJwt": false,
+      "timeout": 90000
+    }
+  },
+  "edit": {
+    "url": "https://sfdc-custom-act.herokuapp.com",
+    "height": 200,
+    "width": 500
+  }
+}
