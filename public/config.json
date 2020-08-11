@@ -31,16 +31,7 @@
       "useJwt": false
     }
   },
-  "wizardSteps": [
-    {
-      "key": "eventdefinitionkey",
-      "label": "Event Definition Key"
-    },
-    {
-      "key": "idselection",
-      "label": "ID Selection"
-    }
-  ],
+  
  "schema": {
     "arguments": {
       "execute": {
