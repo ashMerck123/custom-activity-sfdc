@@ -1,7 +1,7 @@
 {
   "metaData": {
-    "icon": "images/unlock.jpg",
-    "iconSmall": "images/unlock_small.jpg"
+    "icon": "images/unlock.png",
+    "iconSmall": "images/unlock_small.png"
   },
   "type": "RESTDECISION",
   "lang": {
