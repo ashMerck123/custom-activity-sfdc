@@ -1,6 +1,7 @@
 {
   "metaData": {
-    "icon": "images/merck.png"
+    "icon": "images/merck.png",
+    "iconSmall": "images/merck.png"
   },
   "type": "RESTDECISION",
   "lang": {
