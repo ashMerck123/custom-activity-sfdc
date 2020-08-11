@@ -1,7 +1,6 @@
 {
   "metaData": {
-    "icon": "images/unlock.png",
-    "iconSmall": "images/unlock_small.png"
+    "icon": "images/merck.png"
   },
   "type": "RESTDECISION",
   "lang": {
