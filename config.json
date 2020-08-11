@@ -3,7 +3,7 @@
     "icon": "unlock.jpg",
     "iconSmall": "unlock_small.jpg"
   },
-  "type": "Rest",
+  "type": "RESTDECISION",
   "lang": {
     "en-US": {
       "name": "Custom Split",
