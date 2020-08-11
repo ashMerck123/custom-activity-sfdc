@@ -6,7 +6,7 @@
   "type": "RESTDECISION",
   "lang": {
     "en-US": {
-      "name": "Custom Split",
+      "name": "Merck Split",
       "description": "Custom Split activity that makes a decision based on data from a custom application"
     }
   },
@@ -88,7 +88,7 @@
         "branchResult": "success"
       },
       "metaData": {
-        "label": "Success"
+        "label": "Path1"
       }
     },
     {
@@ -96,7 +96,7 @@
         "branchResult": "error"
       },
       "metaData": {
-        "label": "Error"
+        "label": "Path2"
       }
     }
   ],
