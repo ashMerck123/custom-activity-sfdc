@@ -1,4 +1,4 @@
-﻿{
+{
   "metaData": {
     "icon": "unlock.jpg",
     "iconSmall": "unlock_small.jpg"
@@ -41,21 +41,62 @@
       "label": "ID Selection"
     }
   ],
+ "schema": {
+    "arguments": {
+      "execute": {
+        "inArguments": [],
+        "outArguments": [
+          {
+            "message": {
+              "dataType": "Text",
+              "direction": "out",
+              "access": "visible"
+            },
+            "response": {
+              "dataType": "Text",
+              "direction": "out",
+              "access": "visible"
+            },
+            "payload": {
+              "dataType": "Text",
+              "direction": "out",
+              "access": "visible"
+            },
+            "universeName": {
+              "dataType": "Text",
+              "direction": "out",
+              "access": "visible"
+            },
+            "variationName": {
+              "dataType": "Text",
+              "direction": "out",
+              "access": "visible"
+            },
+            "settings": {
+              "dataType": "Text",
+              "direction": "out",
+              "access": "visible"
+            }
+          }
+        ]
+      }
+    }
+  },
   "outcomes": [
     {
       "arguments": {
-        "branchResult": "true"
+        "branchResult": "success"
       },
       "metaData": {
-        "label": "If true"
+        "label": "Success"
       }
     },
     {
       "arguments": {
-        "branchResult": "false"
+        "branchResult": "error"
       },
       "metaData": {
-        "label": "If false"
+        "label": "Error"
       }
     }
   ],
