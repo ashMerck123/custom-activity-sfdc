@@ -1,7 +1,7 @@
-﻿{
+{
   "metaData": {
-    "icon": "images/unlock.jpg",
-    "iconSmall": "images/unlock_small.jpg"
+    "icon": "unlock.jpg",
+    "iconSmall": "unlock_small.jpg"
   },
   "type": "RESTDECISION",
   "lang": {
@@ -13,19 +13,19 @@
   "workflowApiVersion": "1.1",
   "configurationArguments": {
     "save": {
-      "url": "https://mc-custom-activity-poc.herokuapp.com/activity/save",
+      "url": "https://sfdc-custom-act.herokuapp.com/activity/save",
       "verb": "POST",
       "body": "",
       "useJwt": false
     },
     "publish": {
-      "url": "https://mc-custom-activity-poc.herokuapp.com/activity/publish",
+      "url": "https://sfdc-custom-act.herokuapp.com/activity/publish",
       "verb": "POST",
       "body": "",
       "useJwt": false
     },
     "validate": {
-      "url": "https://mc-custom-activity-poc.herokuapp.com/activity/validate",
+      "url": "https://sfdc-custom-act.herokuapp.com/activity/validate",
       "verb": "POST",
       "body": "",
       "useJwt": false
@@ -41,21 +41,62 @@
       "label": "ID Selection"
     }
   ],
+ "schema": {
+    "arguments": {
+      "execute": {
+        "inArguments": [],
+        "outArguments": [
+          {
+            "message": {
+              "dataType": "Text",
+              "direction": "out",
+              "access": "visible"
+            },
+            "response": {
+              "dataType": "Text",
+              "direction": "out",
+              "access": "visible"
+            },
+            "payload": {
+              "dataType": "Text",
+              "direction": "out",
+              "access": "visible"
+            },
+            "universeName": {
+              "dataType": "Text",
+              "direction": "out",
+              "access": "visible"
+            },
+            "variationName": {
+              "dataType": "Text",
+              "direction": "out",
+              "access": "visible"
+            },
+            "settings": {
+              "dataType": "Text",
+              "direction": "out",
+              "access": "visible"
+            }
+          }
+        ]
+      }
+    }
+  },
   "outcomes": [
     {
       "arguments": {
-        "branchResult": "true"
+        "branchResult": "success"
       },
       "metaData": {
-        "label": "If true"
+        "label": "Success"
       }
     },
     {
       "arguments": {
-        "branchResult": "false"
+        "branchResult": "error"
       },
       "metaData": {
-        "label": "If false"
+        "label": "Error"
       }
     }
   ],
@@ -71,7 +112,7 @@
     "execute": {
       "inArguments": [],
       "outArguments": [],
-      "url": "https://mc-custom-activity-poc.herokuapp.com/activity/execute",
+      "url": "https://sfdc-custom-act.herokuapp.com/activity/execute",
       "verb": "POST",
       "body": "",
       "header": "",
@@ -81,7 +122,7 @@
     }
   },
   "edit": {
-    "url": "https://mc-custom-activity-poc.herokuapp.com",
+    "url": "https://sfdc-custom-act.herokuapp.com",
     "height": 200,
     "width": 500
   }
