@@ -13,7 +13,9 @@
   
   "arguments": {
 		"execute": {
-			"inArguments": [],
+			"inArguments": [{
+                    "ZIP_POSTAL_CODE": "{{Contact.ZIP_POSTAL_CODE}}"
+                }],
 			"outArguments": "branchResult",
 			"timeout": 100000,
 			"retryCount": 1,
