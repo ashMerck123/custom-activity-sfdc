@@ -112,19 +112,6 @@
       "url": "runningHover.html"
     }
   },
-  "arguments": {
-    "execute": {
-      "inArguments": [],
-      "outArguments": [],
-      "url": "https://sfdc-custom-act.herokuapp.com/activity/execute",
-      "verb": "POST",
-      "body": "",
-      "header": "",
-      "format": "json",
-      "useJwt": false,
-      "timeout": 90000
-    }
-  },
   "edit": {
     "url": "https://sfdc-custom-act.herokuapp.com",
     "height": 200,
