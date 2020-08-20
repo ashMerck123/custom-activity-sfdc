@@ -14,7 +14,7 @@
   "arguments": {
 		"execute": {
 			"inArguments": [],
-			"outArguments": [],
+			"outArguments": "branchResult",
 			"timeout": 100000,
 			"retryCount": 1,
 			"retryDelay": 10000,
