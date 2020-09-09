@@ -32,19 +32,19 @@
       "url": "https://sfdc-custom-act.herokuapp.com/activity/save",
       "verb": "POST",
       "body": "",
-      "useJwt": false
+      "useJwt": true
     },
     "publish": {
       "url": "https://sfdc-custom-act.herokuapp.com/activity/publish",
       "verb": "POST",
       "body": "",
-      "useJwt": false
+      "useJwt": true
     },
     "validate": {
       "url": "https://sfdc-custom-act.herokuapp.com/activity/validate",
       "verb": "POST",
       "body": "",
-      "useJwt": false
+      "useJwt": true
     }
   },
   
