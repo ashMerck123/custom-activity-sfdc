@@ -21,8 +21,7 @@
 			"retryCount": 1,
 			"retryDelay": 10000,
 			"concurrentRequests" : 5,
-			"url": "https://vn60kxue1l.execute-api.eu-central-1.amazonaws.com/stage1",
-			"useJwt":true
+			"url": "https://vn60kxue1l.execute-api.eu-central-1.amazonaws.com/stage1"
 		}
 	},
   
