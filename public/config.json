@@ -95,7 +95,7 @@
         "branchResult": "success"
       },
       "metaData": {
-        "label": "Yes"
+        "label": "YES"
       }
     },
     {
@@ -103,7 +103,7 @@
         "branchResult": "error"
       },
       "metaData": {
-        "label": "No"
+        "label": "NO"
       }
     }
   ],
