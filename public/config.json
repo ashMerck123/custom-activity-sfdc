@@ -28,19 +28,18 @@
   "workflowApiVersion": "1.1",
   "configurationArguments": {
     "save": {
-      "url": "https://sfdc-custom-act.herokuapp.com/activity/save",
-      "verb": "POST",
+      "url": "https://vn60kxue1l.execute-api.eu-central-1.amazonaws.com/stage2/test",
+      "verb": "GET",
       "body": ""
     },
     "publish": {
-      "url": "https://sfdc-custom-act.herokuapp.com/activity/publish",
-      "verb": "POST",
-      "body": "",
-      "useJwt": true
+      "url": "https://vn60kxue1l.execute-api.eu-central-1.amazonaws.com/stage2/test",
+      "verb": "GET",
+      "body": ""
     },
     "validate": {
-      "url": "https://sfdc-custom-act.herokuapp.com/activity/validate",
-      "verb": "POST",
+      "url": "https://vn60kxue1l.execute-api.eu-central-1.amazonaws.com/stage2/test",
+      "verb": "GET",
       "body": ""
     }
   },
