@@ -14,7 +14,7 @@
   "arguments": {
 		"execute": {
 			"inArguments": [{
-                    "Indicator": "{{Contact.Attribute.Indicator}}"
+                    "Indicator": "{{Contact.Attribute.Ashish.Indicator}}"
                 }],
 			"outArguments": "branchResult",
 			"timeout": 100000,
@@ -27,24 +27,12 @@
   
   "workflowApiVersion": "1.1",
   "configurationArguments": {
-    "save": {
-      "url": "https://vn60kxue1l.execute-api.eu-central-1.amazonaws.com/stage2/test",
-      "verb": "GET",
-      "body": ""
-    },
     "publish": {
-      "url": "https://vn60kxue1l.execute-api.eu-central-1.amazonaws.com/stage2/test"
+      "url": "https://vn60kxue1l.execute-api.eu-central-1.amazonaws.com/stage1/test"
 	    ,
-      "verb": "GET",
-      "body": ""
-    },
-    "validate": {
-      "url": "https://vn60kxue1l.execute-api.eu-central-1.amazonaws.com/stage2/test"
-	    ,
-      "verb": "GET",
+      "verb": "POST",
       "body": ""
     }
-  },
   
  "schema": {
     "arguments": {
