@@ -29,9 +29,6 @@
   "configurationArguments": {
     "publish": {
       "url": "https://vn60kxue1l.execute-api.eu-central-1.amazonaws.com/stage1/test"
-	    ,
-      "verb": "POST",
-      "body": ""
     }
   
  "schema": {
