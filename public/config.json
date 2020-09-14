@@ -33,10 +33,10 @@
       "body": ""
     },
     "publish": {
-      "url": "https://vn60kxue1l.execute-api.eu-central-1.amazonaws.com/stage"
+      "url": "https://vn60kxue1l.execute-api.eu-central-1.amazonaws.com/stage2/test"
     },
     "validate": {
-      "url": "https://vn60kxue1l.execute-api.eu-central-1.amazonaws.com/stage"
+      "url": "https://vn60kxue1l.execute-api.eu-central-1.amazonaws.com/stage2/test"
     }
   },
   
