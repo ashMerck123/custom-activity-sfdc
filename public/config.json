@@ -100,7 +100,7 @@
     }
   },
   "edit": {
-    "url": "https://sfdc-custom-act.herokuapp.com",
+    "url": "https://mc-custom-activity-poc.herokuapp.com/",
     "height": 200,
     "width": 500
   }
