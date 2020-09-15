@@ -37,38 +37,6 @@
       "execute": {
         "inArguments": [],
         "outArguments": [
-          {
-            "message": {
-              "dataType": "Text",
-              "direction": "out",
-              "access": "visible"
-            },
-            "response": {
-              "dataType": "Text",
-              "direction": "out",
-              "access": "visible"
-            },
-            "payload": {
-              "dataType": "Text",
-              "direction": "out",
-              "access": "visible"
-            },
-            "universeName": {
-              "dataType": "Text",
-              "direction": "out",
-              "access": "visible"
-            },
-            "variationName": {
-              "dataType": "Text",
-              "direction": "out",
-              "access": "visible"
-            },
-            "settings": {
-              "dataType": "Text",
-              "direction": "out",
-              "access": "visible"
-            }
-          }
         ]
       }
     }
