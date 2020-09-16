@@ -14,8 +14,7 @@
   
   "arguments": {
 		"execute": {
-			"inArguments": [],
-			"outArguments": [],
+
 			"timeout": 10,
 			"retryCount": 1,
 			"retryDelay": 10,
