@@ -1,4 +1,5 @@
-{"workflowApiVersion": "1.1",
+{
+  "workflowApiVersion": "1.1",
   "metaData": {
     "icon": "images/merck.png",
     "iconSmall": "images/merck.png"
