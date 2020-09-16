@@ -14,7 +14,7 @@
   "arguments": {
 		"execute": {
 			"inArguments": [{
-                    "Indicator": "{{Contact.Attribute.Ashish.Indicator}}"
+                    "Indicator": 10
                 }],
 			"outArguments": "branchResult",
 			"timeout": 10,
