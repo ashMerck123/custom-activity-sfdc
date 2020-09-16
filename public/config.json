@@ -14,12 +14,13 @@
   
   "arguments": {
 		"execute": {
-
-			"timeout": 10,
-			"retryCount": 1,
-			"retryDelay": 10,
-			"concurrentRequests" : 5,
-			"url": "https://vn60kxue1l.execute-api.eu-central-1.amazonaws.com/stage1"
+			"url": "https://vn60kxue1l.execute-api.eu-central-1.amazonaws.com/stage1",
+			"verb": "POST",
+			"body": "",
+			"header": "",
+			"format": "json",
+			"useJwt": false,
+			"timeout": 100
 		}
 	},
   
