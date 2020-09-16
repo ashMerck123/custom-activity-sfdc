@@ -14,9 +14,7 @@
   
   "arguments": {
 		"execute": {
-			"inArguments": [{
-                    "Indicator": 10
-                }],
+			"inArguments": [],
 			"outArguments": [],
 			"timeout": 10,
 			"retryCount": 1,
