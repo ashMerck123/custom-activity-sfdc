@@ -17,7 +17,7 @@
 			"inArguments": [{
                     "Indicator": 10
                 }],
-			"outArguments": "branchResult",
+			"outArguments": [],
 			"timeout": 10,
 			"retryCount": 1,
 			"retryDelay": 10,
