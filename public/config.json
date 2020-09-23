@@ -15,7 +15,7 @@
   "arguments": {
 		"execute": {
 			"url": "https://vn60kxue1l.execute-api.eu-central-1.amazonaws.com/stage1",
-			"verb": "POST",
+			"verb": "GET",
 			"body": "",
 			"header": "",
 			"format": "json",
@@ -27,7 +27,8 @@
   
   "configurationArguments": {
     "publish": {
-      "url": "https://vn60kxue1l.execute-api.eu-central-1.amazonaws.com/stage1/test"
+      "url": "https://vn60kxue1l.execute-api.eu-central-1.amazonaws.com/stage1/test",
+      "verb": "GET"
     }
   }
   ,
