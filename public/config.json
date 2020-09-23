@@ -27,8 +27,7 @@
   
   "configurationArguments": {
     "publish": {
-      "url": "https://vn60kxue1l.execute-api.eu-central-1.amazonaws.com/StagefiN/test",
-      "verb": "GET"
+      "url": "https://vn60kxue1l.execute-api.eu-central-1.amazonaws.com/StagefiN/test"
     }
   }
   ,
