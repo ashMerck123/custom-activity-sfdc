@@ -1,5 +1,5 @@
 {
-  "name": "sfdc-custom-act",
+  "name": "mc-custom-activity-poc",
   "version": "1.0.0",
   "description": "",
   "main": "customActivity.js",

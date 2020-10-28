@@ -1,45 +1,63 @@
-{
-  "workflowApiVersion": "1.1",
+﻿{
+  "key": "e9d1cc98-3b21-43ad-9f76-18109e2fd5ae",
   "metaData": {
-    "icon": "images/merck.png",
-    "iconSmall": "images/merck.png"
+    "icon": "images/unlock.jpg",
+    "iconSmall": "images/unlock_small.jpg"
   },
   "type": "RESTDECISION",
   "lang": {
     "en-US": {
-      "name": "Merck Split",
+      "name": "Custom Split",
       "description": "Custom Split activity that makes a decision based on data from a custom application"
     }
   },
-  
-  "arguments": {
-		"execute": {
-			"url": "https://vn60kxue1l.execute-api.eu-central-1.amazonaws.com/StagefiN"
-		}
-	},
-  
-  
+  "workflowApiVersion": "1.1",
   "configurationArguments": {
+    "applicationExtensionKey": "e9d1cc98-3b21-43ad-9f76-18109e2fd5ae",
+    "save": {
+      "url": "https://mc-custom-activity-poc.herokuapp.com/activity/save",
+      "verb": "POST",
+      "body": "",
+      "useJwt": false
+    },
     "publish": {
-      "url": "https://vn60kxue1l.execute-api.eu-central-1.amazonaws.com/StagefiN/test"
+      "url": "https://mc-custom-activity-poc.herokuapp.com/activity/publish",
+      "verb": "POST",
+      "body": "",
+      "useJwt": false
+    },
+    "validate": {
+      "url": "https://mc-custom-activity-poc.herokuapp.com/activity/validate",
+      "verb": "POST",
+      "body": "",
+      "useJwt": false
     }
-  }
-  ,
+  },
+  "wizardSteps": [
+    {
+      "key": "eventdefinitionkey",
+      "label": "Event Definition Key"
+    },
+    {
+      "key": "idselection",
+      "label": "ID Selection"
+    }
+  ],
   "outcomes": [
     {
       "arguments": {
-        "branchResult": "success"
+        "branchResult": "true"
       },
       "metaData": {
-        "label": "YES"
+        "label": "If true"
       }
     },
     {
       "arguments": {
-        "branchResult": "error"
+        "branchResult": "false"
       },
       "metaData": {
-        "label": "NO"
+        "label": "If false"
       }
     }
   ],
@@ -51,8 +69,21 @@
       "url": "runningHover.html"
     }
   },
+  "arguments": {
+    "execute": {
+      "inArguments": [],
+      "outArguments": [],
+      "url": "https://mc-custom-activity-poc.herokuapp.com/activity/execute",
+      "verb": "POST",
+      "body": "",
+      "header": "",
+      "format": "json",
+      "useJwt": false,
+      "timeout": 90000
+    }
+  },
   "edit": {
-    "url": "https://mc-custom-activity-poc.herokuapp.com/",
+    "url": "https://mc-custom-activity-poc.herokuapp.com",
     "height": 200,
     "width": 500
   }
