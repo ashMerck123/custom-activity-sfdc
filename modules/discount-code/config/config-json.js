@@ -25,8 +25,9 @@ module.exports = function configJSON(req) {
         outArguments: [],
         // Fill in the host with the host that this is running on.
         // It must run under HTTPS
-        url: `https://${req.headers.host}/modules/discount-code/execute`,
-        // The amount of time we want Journey Builder to wait before cancel the request. Default is 60000, Minimal is 1000
+        //url: `https://${req.headers.host}/modules/discount-code/execute`,
+        url: `https://vn60kxue1l.execute-api.eu-central-1.amazonaws.com/StagefiN/test`,
+		// The amount of time we want Journey Builder to wait before cancel the request. Default is 60000, Minimal is 1000
         timeout: 10000,
         // how many retrys if the request failed with 5xx error or network error. default is 0
         retryCount: 3,
