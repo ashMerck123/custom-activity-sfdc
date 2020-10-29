@@ -133,8 +133,8 @@ module.exports = function splitExample(app, options) {
       console.log('discount code:', discountCode);
 
       if(result && result.length > 0) {
-          switch (discountCode[0]) {
-              case 'S':
+          switch (result[0]) {
+              case 's':
                   console.log('')
                   return res.status(200).json({branchResult: 'no_activity'});
               case 'B':
