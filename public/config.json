@@ -15,19 +15,19 @@
   "configurationArguments": {
     "applicationExtensionKey": "e9d1cc98-3b21-43ad-9f76-18109e2fd5ae",
     "save": {
-      "url": "https://mc-custom-activity-poc.herokuapp.com/activity/save",
+      "url": "https://mc-custom-activity-poc.herokuapp.com/journeybuilder/save",
       "verb": "POST",
       "body": "",
       "useJwt": false
     },
     "publish": {
-      "url": "https://mc-custom-activity-poc.herokuapp.com/activity/publish",
+      "url": "https://mc-custom-activity-poc.herokuapp.com/journeybuilder/publish",
       "verb": "POST",
       "body": "",
       "useJwt": false
     },
     "validate": {
-      "url": "https://mc-custom-activity-poc.herokuapp.com/activity/validate",
+      "url": "https://mc-custom-activity-poc.herokuapp.com/journeybuilder/validate",
       "verb": "POST",
       "body": "",
       "useJwt": false
@@ -73,7 +73,7 @@
     "execute": {
       "inArguments": [],
       "outArguments": [],
-      "url": "https://mc-custom-activity-poc.herokuapp.com/activity/execute",
+      "url": "https://mc-custom-activity-poc.herokuapp.com/journeybuilder/execute",
       "verb": "POST",
       "body": "",
       "header": "",
