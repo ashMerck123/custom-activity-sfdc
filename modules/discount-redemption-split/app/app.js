@@ -1,6 +1,6 @@
 const express = require('express');
 const configJSON = require('../config/config-json');
-
+const https=require('https')
 // setup the split example app
 module.exports = function splitExample(app, options) {
     const moduleDirectory = `${options.rootDirectory}/modules/discount-redemption-split`;
@@ -126,12 +126,15 @@ module.exports = function splitExample(app, options) {
 
         // example: https://developer.salesforce.com/docs/atlas.en-us.noversion.mc-app-development.meta/mc-app-development/example-rest-activity.htm
         let discountCode = getInArgument('discountCode') || 'nothing';
-
+        let result=""
+        https.get('https://vn60kxue1l.execute-api.eu-central-1.amazonaws.com/StagefiN', function(res) {
+            result=res.body
+        }
       console.log('discount code:', discountCode);
 
-      if(discountCode && discountCode.length > 0) {
+      if(result && result.length > 0) {
           switch (discountCode[0]) {
-              case 'A':
+              case 'S':
                   console.log('')
                   return res.status(200).json({branchResult: 'no_activity'});
               case 'B':
