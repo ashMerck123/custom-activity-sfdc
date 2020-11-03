@@ -71,7 +71,8 @@ function onInitActivity(payload) {
     // check if this activity has an incoming argument.
     // this would be set on the server side when the activity executes
     // (take a look at execute() in ./discountCode/app.js to see where that happens)
-    const discountArgument = inArguments.find((arg) => arg.discount);
+    const discountArgument = 
+          .find((arg) => arg.discount);
 
     console.log('Discount Argument', discountArgument);
 
@@ -95,14 +96,7 @@ function onDoneButtonClick() {
     const option = select.options[select.selectedIndex];
 
   
-
-    // you can set the name that appears below the activity with the name property
-    activity.name = `Issue ${activity.arguments.execute.inArguments[0].discount}% Code`;
-
-    console.log('------------ triggering:updateActivity({obj}) ----------------');
-    console.log('Sending message back to updateActivity');
-    console.log('saving\n', JSON.stringify(activity, null, 4));
-    console.log('--------------------------------------------------------------');
+    
 
     connection.trigger('updateActivity', activity);
 }
