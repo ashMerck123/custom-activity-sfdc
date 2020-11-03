@@ -71,7 +71,7 @@ module.exports = function configJSON(req) {
           label: 'False'
         }
       }
-    ]
+    ],
     schema: {
       arguments: {
         execute: {
