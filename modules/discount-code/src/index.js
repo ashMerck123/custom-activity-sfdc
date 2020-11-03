@@ -96,7 +96,9 @@ function onDoneButtonClick() {
     const option = select.options[select.selectedIndex];
 
   
-    activity.arguments.execute.inArguments.push({discount: option.value});
+    activity.arguments.execute.inArguments = [{
+        discount: option.value,
+    }];
     
     // you can set the name that appears below the activity with the name property
     //activity.name = `Issue ${activity.arguments.execute.inArguments[0].discount}% Code`;
