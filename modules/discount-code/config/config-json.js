@@ -55,6 +55,23 @@ module.exports = function configJSON(req) {
         emptyIframe: true
       }
     },
+	  outcomes: [{
+        arguments: {
+          branchResult: 'false'
+        },
+        metaData: {
+          label: 'True'
+        }
+      },
+      {
+        arguments: {
+          branchResult: 'true'
+        },
+        metaData: {
+          label: 'False'
+        }
+      }
+    ]
     schema: {
       arguments: {
         execute: {
