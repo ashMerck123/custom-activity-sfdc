@@ -71,15 +71,14 @@ function onInitActivity(payload) {
     // check if this activity has an incoming argument.
     // this would be set on the server side when the activity executes
     // (take a look at execute() in ./discountCode/app.js to see where that happens)
-    const discountArgument = 
-          .find((arg) => arg.discount);
+    const discountArgument = inArguments.find((arg) => arg.discount);
 
     console.log('Discount Argument', discountArgument);
 
     // if a discountCode back argument was set, show the message in the view.
-    //if (discountArgument) {
-    //    selectDiscountCodeOption(discountArgument.discount);
-    //}
+    if (discountArgument) {
+        selectDiscountCodeOption(discountArgument.discount);
+    }
 
     // if the discountCode back argument doesn't exist the user can pick
     // a discountCode message from the drop down list. the discountCode back arg
@@ -95,14 +94,12 @@ function onDoneButtonClick() {
     const select = document.getElementById('discount-code');
     const option = select.options[select.selectedIndex];
 
-  
     activity.arguments.execute.inArguments = [{
         discount: option.value,
     }];
-    
+
     // you can set the name that appears below the activity with the name property
-    //activity.name = `Issue ${activity.arguments.execute.inArguments[0].discount}% Code`;
-    activity.name = `AWS`;
+    activity.name = `Issue ${activity.arguments.execute.inArguments[0].discount}% Code`;
 
     console.log('------------ triggering:updateActivity({obj}) ----------------');
     console.log('Sending message back to updateActivity');
