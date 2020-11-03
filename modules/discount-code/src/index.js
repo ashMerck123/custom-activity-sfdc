@@ -93,7 +93,7 @@ function onDoneButtonClick() {
 
     // get the option that the user selected and save it to
     const select = document.getElementById('discount-code');
-    const option = select;
+    const option = select.options[select.selectedIndex];
 
   
     activity.arguments.execute.inArguments = [{
